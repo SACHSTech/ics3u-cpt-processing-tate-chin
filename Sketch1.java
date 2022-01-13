@@ -1,36 +1,58 @@
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class Sketch1 extends PApplet {
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
+  PImage player;
+  float playerX = 300;
+  float playerY = 70;
+  float speed = 6;
+  float gravity = 5;
+
+  boolean movingRight = false;
+
   public void settings() {
-	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
-    background(210, 255, 173);
+    // PLAYER
+    player = loadImage("floppa.png");
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+    background(201, 222, 255);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+    // DRAWING PLATFORMS
+    rect(100, 100, 100, 10);
+    rect(300, 150, 100, 10);
+    rect(200, 300, 100, 10);
+    rect(150, 400, 100, 10);
+    
+    // DRAWING PLAYER
+    image(player, playerX, playerY, width/7, height/7);
+    
+    // GRAVITY
+    playerY+=gravity;
+    
   }
-  
-  // define other methods down here.
+
+  @Override
+  public void keyPressed() {
+      
+      if(keyCode == LEFT){
+        playerX -= speed;
+      }
+      else if(keyCode == RIGHT){
+        playerX += speed;
+        movingRight = true;
+      }
+      super.keyPressed();
+  }
+  @Override
+  public void keyReleased() {
+
+      movingRight = false;
+      super.keyReleased();
+  }
 }
