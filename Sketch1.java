@@ -7,7 +7,7 @@ public class Sketch1 extends PApplet {
   float playerX = 300;
   float playerY = 70;
   float speed = 6;
-  float gravity = 5;
+  float gravity = 3;
 
   boolean keyLeft, keyRight;
 
@@ -29,6 +29,8 @@ public class Sketch1 extends PApplet {
     rect(300, 150, 100, 10);
     rect(200, 300, 100, 10);
     rect(150, 400, 100, 10);
+    rect(450, 300, 100, 10);
+    rect(300, 500, 100, 10);
     
     // DRAWING PLAYER
     image(player, playerX, playerY, width/7, height/7);
@@ -38,6 +40,7 @@ public class Sketch1 extends PApplet {
     // COLLISIONS WITH PLATFORMS
 
     // DRAWING SPIKES
+    stroke(0);
     triangle(0, 600, 100, 550, 125, 600);
     triangle(125, 600, 200, 550, 250, 600);
     triangle(250, 600, 300, 550, 370, 600);
