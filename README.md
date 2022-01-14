@@ -7,7 +7,7 @@ The objective of the game is to play as a cat and go around collecting objects t
 
 # Gameplay Mechanics
 
-The player is able to move left, right, and jump using the arrow keys and space bar. The rectangles that are generated are platforms that you are able to stand on and the triangles at the bottom of the screen represent deadly spikes. Falling onto the spikes triggers a game over screen. 
+The player is able to move left, right, and jump using the arrow keys and space bar. The rectangles that are generated are platforms that you are able to stand on and the triangles at the bottom of the screen represent deadly spikes. Falling onto the spikes triggers a game over screen. The circular objects are what the player needs to collect and are scattered throughout the map. In some parts of the game, there will be rainfall which decreases the height that the player can jump making it more challenges for them to get from platform to platform
 
 # Scoring
 
