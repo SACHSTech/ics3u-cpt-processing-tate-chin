@@ -8,9 +8,11 @@ public class Sketch2 extends PApplet {
   float playerY = 70;
   float speed = 6;
   float gravity = 3;
-
+  
   boolean keyLeft, keyRight;
-
+  boolean isOnLeftSide = false;
+  boolean isOnRightSide = false;
+  boolean isOnMiddleSide = true;
   public void settings() {
     size(600, 600);
   }
@@ -22,25 +24,60 @@ public class Sketch2 extends PApplet {
 
   public void draw() {
     background(201, 222, 255);
-
     changePosition();
-    // DRAWING PLATFORMS
 
     stroke(0);
     fill(225);
+    
+    // DRAWING PLAYER
+    image(player, playerX, playerY, width/12, height/12);
+    
+    //rect(275,  )
 
+    /*
     rect(100, 100, 100, 10);
     rect(300, 150, 100, 10);
     rect(200, 300, 100, 10);
     rect(150, 400, 100, 10);
     rect(450, 300, 100, 10);
     rect(300, 500, 100, 10);
-    
-    // DRAWING PLAYER
-    image(player, playerX, playerY, width/7, height/7);
+    */
+
+    if(playerX < 0){
+      isOnLeftSide = true;
+      isOnRightSide = false;
+      isOnMiddleSide = false;
+      background(254, 207, 255);
+
+      rect(100, 100, 100, 10);
+      rect(300, 150, 100, 10);
+      rect(200, 300, 100, 10);
+      rect(150, 400, 100, 10);
+      rect(450, 300, 100, 10);
+      rect(300, 500, 100, 10);
+
+      image(player, playerX + 600, playerY, width/12, height/12);
+
+    }
+    else if(playerX > width){
+      isOnRightSide = true;
+      isOnLeftSide = false;
+      isOnMiddleSide = false;
+      background(208, 255, 163);
+
+      rect(100, 100, 100, 10);
+      rect(300, 150, 100, 10);
+      rect(200, 300, 100, 10);
+      rect(150, 400, 100, 10);
+      rect(450, 300, 100, 10);
+      rect(300, 500, 100, 10);
+
+      image(player, playerX - 600, playerY, width/12, height/12);
+  
+    }
     
     // GRAVITY
-    
+    //playerY+=3;
     // COLLISIONS WITH PLATFORMS
 
     // DRAWING SPIKES
@@ -58,16 +95,9 @@ public class Sketch2 extends PApplet {
       text("Restart The Screen", 300, 400);
       
     }
-
     // Circle Collections
-
     stroke(0);
     fill(50, 168, 82);
-
-    ellipse(150, 75, 20, 20); 
-
-    // Changing Platforms
-
   }
 
   void changePosition() {
