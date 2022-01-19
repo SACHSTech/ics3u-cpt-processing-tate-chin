@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
+        
         "/Users/angel/Desktop/JARs/Processing/mac_copy.jar"
-    ]
+    ],
+    "java.project.outputPath": "bin"
 }
