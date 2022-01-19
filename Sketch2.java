@@ -64,7 +64,9 @@ public class Sketch2 extends PApplet {
     stroke(0);
     fill(50, 168, 82);
 
-    
+    ellipse(150, 75, 20, 20); 
+
+    // Changing Platforms
 
   }
 

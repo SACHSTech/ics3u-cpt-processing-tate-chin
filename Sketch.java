@@ -25,6 +25,10 @@ public class Sketch extends PApplet {
 
     changePosition();
     // DRAWING PLATFORMS
+
+    stroke(0);
+    fill(225);
+    
     rect(100, 100, 100, 10);
     rect(300, 150, 100, 10);
     rect(200, 300, 100, 10);
@@ -40,12 +44,12 @@ public class Sketch extends PApplet {
     // COLLISIONS WITH PLATFORMS
 
     // DRAWING SPIKES
-    stroke(0);
-    triangle(0, 600, 100, 550, 125, 600);
-    triangle(125, 600, 200, 550, 250, 600);
-    triangle(250, 600, 300, 550, 370, 600);
-    triangle(375, 600, 400, 550, 450, 600);
-    triangle(470, 600, 500, 550, 600, 600);
+    stroke(235, 52, 70);
+    fill(235, 52, 70);
+
+    for (float i = 0; i < 25; i++) {
+      triangle(i * 24, 600, (i * 24) + 12, 550, (i + 1) * 24, 600);
+    }
 
     // IF PLAYER HITS A SPIKE THEN IT TRIGGERS A GAME OVER SCREEN
     if(playerY > 500){
