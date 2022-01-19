@@ -10,8 +10,8 @@ class Main {
     
     String[] processingArgs = {"MySketch"};
 	  // Sketch mySketch = new Sketch();  
-	  Sketch1 mySketch = new Sketch1();
-	  // Sketch2 mySketch = new Sketch2();  // uncomment this to run this sketch file
+	  // Sketch1 mySketch = new Sketch1();
+	   Sketch2 mySketch = new Sketch2();  // uncomment this to run this sketch file
 	  
 	  PApplet.runSketch(processingArgs, mySketch);
   }
