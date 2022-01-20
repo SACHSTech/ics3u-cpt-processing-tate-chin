@@ -5,7 +5,7 @@ public class Sketch2 extends PApplet {
 	
   PImage player;
   float playerX = 275;
-  float playerY = 450;
+  float playerY = 400;
   float speed = 4;
   float gravity = 3;
   
@@ -27,7 +27,7 @@ public class Sketch2 extends PApplet {
     changePosition();
     
     // DRAWING PLAYER
-    image(player, playerX, playerY, width/12, height/12);
+    image(player, playerX, playerY, width/15, height/15);
     
     stroke(0);
     fill(225);
@@ -95,7 +95,7 @@ public class Sketch2 extends PApplet {
   
       rect(575, 450, 25, 50);
 
-      image(player, playerX + 600, playerY, width/12, height/12);
+      image(player, playerX + 600, playerY, width/15, height/15);
 
     }
     else if(playerX > width && playerY > 0 && playerY < 100){
@@ -134,14 +134,18 @@ public class Sketch2 extends PApplet {
   
       rect(0, 25, 25, 50);
 
-      image(player, playerX - 600, playerY, width/12, height/12);
+      image(player, playerX - 600, playerY, width/15, height/15);
   
     }
     
     // GRAVITY
-    // playerY+=3;
+    playerY+=3;
 
     // COLLISIONS WITH PLATFORMS
+    if (playerX > 245 && playerX < 315 && playerY > 465) {
+      playerY = 465;
+    }
+    // rect(275, 500, 50, 5);
 
     // DRAWING SPIKES
     stroke(235, 52, 70);
@@ -152,7 +156,7 @@ public class Sketch2 extends PApplet {
     }
 
     // IF PLAYER HITS A SPIKE THEN IT TRIGGERS A GAME OVER SCREEN
-    if(playerY > 500){
+    if(playerY > 550){
       background(0);
       text("Game Over", 300, 300);
       text("Restart The Screen", 300, 400);
@@ -161,6 +165,10 @@ public class Sketch2 extends PApplet {
     // Circle Collections
     stroke(0);
     fill(50, 168, 82);
+
+    //ellipse(210, 80, 10, 20);
+    //ellipse(25, 55, 10, 20);
+
   }
 
   void changePosition() {
