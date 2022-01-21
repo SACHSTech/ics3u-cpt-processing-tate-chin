@@ -6,10 +6,15 @@ public class Sketch2 extends PApplet {
   PImage player;
   float playerX = 275;
   float playerY = 400;
+  float playerX1 = 600;
+  float playerY1 = 275;
+  float playerX2 = 0;
+  float playerY2 = 50;
   float speed = 4;
   float gravity = 3;
+  float jump = 10;
   
-  boolean keyLeft, keyRight;
+  boolean keyLeft, keyRight, keyUp;
   boolean isOnLeftSide = false;
   boolean isOnRightSide = false;
   boolean isOnMiddleSide = true;
@@ -97,6 +102,62 @@ public class Sketch2 extends PApplet {
 
       image(player, playerX + 600, playerY, width/15, height/15);
 
+      if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
+      if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
+        playerY = 435;
+      } 
+      if (playerX > 425 && playerX < 495 && playerY > 345 && playerY < 350) {
+        playerY = 345;
+      }
+      if (playerX > 370 && playerX < 440 && playerY > 235 && playerY < 240) {
+        playerY = 235;
+      }
+      if (playerX > 350 && playerX < 420 && playerY > 135 && playerY < 140) {
+        playerY = 135;
+      }
+      if (playerX > 270 && playerX < 340 && playerY > 75 && playerY < 80) {
+        playerY = 75;
+      }
+      if (playerX > 370 && playerX < 440 && playerY > 35 && playerY < 40) {
+        playerY = 35;
+      }
+      if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
+  
+      // fix later
+      if (playerX > 170 && playerX < 200 && playerY > 65) {
+          playerY = 65;
+      }
+  
+      if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
+        playerY = 65;
+      }
+      if (playerX > 70 && playerX < 140 && playerY > -5 && playerY < 0) {
+        playerY = -5;
+      }
+      if (playerX > -30 && playerX < 40 && playerY > 40 && playerY < 45) {
+        playerY = 40;
+      }
+      if (playerX > 20 && playerX < 90 && playerY > 145 && playerY < 150) {
+        playerY = 145;
+      }
+      if (playerX > 10 && playerX < 80 && playerY > 255 && playerY < 260) {
+        playerY = 255;
+      }
+      if (playerX > 90 && playerX < 160 && playerY > 385 && playerY < 390) {
+        playerY = 385;
+      }
+  
+      if (playerX > 520 && playerX < 590 && playerY > 30 && playerY < 35) {
+        playerY = 30;
+      }
+      if (playerX > -30 && playerX < 40 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
+
     }
     else if(playerX > width && playerY > 0 && playerY < 100){
       isOnRightSide = true;
@@ -135,6 +196,62 @@ public class Sketch2 extends PApplet {
       rect(0, 25, 25, 50);
 
       image(player, playerX - 600, playerY, width/15, height/15);
+
+      if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
+      if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
+        playerY = 435;
+      } 
+      if (playerX > 425 && playerX < 495 && playerY > 345 && playerY < 350) {
+        playerY = 345;
+      }
+      if (playerX > 370 && playerX < 440 && playerY > 235 && playerY < 240) {
+        playerY = 235;
+      }
+      if (playerX > 350 && playerX < 420 && playerY > 135 && playerY < 140) {
+        playerY = 135;
+      }
+      if (playerX > 270 && playerX < 340 && playerY > 75 && playerY < 80) {
+        playerY = 75;
+      }
+      if (playerX > 370 && playerX < 440 && playerY > 35 && playerY < 40) {
+        playerY = 35;
+      }
+      if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
+  
+      // fix later
+      if (playerX > 170 && playerX < 200 && playerY > 65) {
+          playerY = 65;
+      }
+  
+      if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
+        playerY = 65;
+      }
+      if (playerX > 70 && playerX < 140 && playerY > -5 && playerY < 0) {
+        playerY = -5;
+      }
+      if (playerX > -30 && playerX < 40 && playerY > 40 && playerY < 45) {
+        playerY = 40;
+      }
+      if (playerX > 20 && playerX < 90 && playerY > 145 && playerY < 150) {
+        playerY = 145;
+      }
+      if (playerX > 10 && playerX < 80 && playerY > 255 && playerY < 260) {
+        playerY = 255;
+      }
+      if (playerX > 90 && playerX < 160 && playerY > 385 && playerY < 390) {
+        playerY = 385;
+      }
+  
+      if (playerX > 520 && playerX < 590 && playerY > 30 && playerY < 35) {
+        playerY = 30;
+      }
+      if (playerX > -30 && playerX < 40 && playerY > 465 && playerY < 470) {
+        playerY = 465;
+      }
   
     }
     
@@ -142,10 +259,61 @@ public class Sketch2 extends PApplet {
     playerY+=3;
 
     // COLLISIONS WITH PLATFORMS
-    if (playerX > 245 && playerX < 315 && playerY > 465) {
+    if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
       playerY = 465;
     }
-    // rect(275, 500, 50, 5);
+    if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
+      playerY = 435;
+    } 
+    if (playerX > 425 && playerX < 495 && playerY > 345 && playerY < 350) {
+      playerY = 345;
+    }
+    if (playerX > 370 && playerX < 440 && playerY > 235 && playerY < 240) {
+      playerY = 235;
+    }
+    if (playerX > 350 && playerX < 420 && playerY > 135 && playerY < 140) {
+      playerY = 135;
+    }
+    if (playerX > 270 && playerX < 340 && playerY > 75 && playerY < 80) {
+      playerY = 75;
+    }
+    if (playerX > 370 && playerX < 440 && playerY > 35 && playerY < 40) {
+      playerY = 35;
+    }
+    if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
+      playerY = 465;
+    }
+
+    // fix later
+    if (playerX > 170 && playerX < 200 && playerY > 65) {
+        playerY = 65;
+    }
+
+    if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
+      playerY = 65;
+    }
+    if (playerX > 70 && playerX < 140 && playerY > -5 && playerY < 0) {
+      playerY = -5;
+    }
+    if (playerX > -30 && playerX < 40 && playerY > 40 && playerY < 45) {
+      playerY = 40;
+    }
+    if (playerX > 20 && playerX < 90 && playerY > 145 && playerY < 150) {
+      playerY = 145;
+    }
+    if (playerX > 10 && playerX < 80 && playerY > 255 && playerY < 260) {
+      playerY = 255;
+    }
+    if (playerX > 90 && playerX < 160 && playerY > 385 && playerY < 390) {
+      playerY = 385;
+    }
+
+    if (playerX > 520 && playerX < 590 && playerY > 30 && playerY < 35) {
+      playerY = 30;
+    }
+    if (playerX > -30 && playerX < 40 && playerY > 465 && playerY < 470) {
+      playerY = 465;
+    }
 
     // DRAWING SPIKES
     stroke(235, 52, 70);
@@ -174,16 +342,20 @@ public class Sketch2 extends PApplet {
   void changePosition() {
     if(keyLeft) playerX-=speed;
     if(keyRight) playerX+=speed;
+    if(keyUp) playerY-=jump;
   }
 
   @Override
   public void keyPressed() {
   
-      if(keyCode == LEFT){
+      if(keyCode == LEFT) {
         keyLeft = true;
       }
-      else if(keyCode == RIGHT){
+      else if(keyCode == RIGHT) {
         keyRight = true;
+      }
+      else if (keyCode == UP) {
+        keyUp = true;
       }
       super.keyPressed();
   }
@@ -195,6 +367,9 @@ public class Sketch2 extends PApplet {
     }
     else if (keyCode == RIGHT) {
       keyRight = false;
+    }
+    else if (keyCode == UP) {
+      keyUp = false;
     }
       super.keyReleased();
   }
