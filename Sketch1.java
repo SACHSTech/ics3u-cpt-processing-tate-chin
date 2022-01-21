@@ -195,35 +195,35 @@ public class Sketch1 extends PApplet {
 
       image(player, playerX + 600, playerY, width/15, height/15);
 
-      if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
+      if (playerX > 245 - 600 && playerX < 315 - 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
-      if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
+      if (playerX > 375 - 600 && playerX < 445 - 600 && playerY > 435 && playerY < 440) {
         playerY = 435;
         isOnPlatform = true;
       } 
-      if (playerX > 425 && playerX < 495 && playerY > 345 && playerY < 350) {
+      if (playerX > 425 - 600 && playerX < 495 - 600 && playerY > 345 && playerY < 350) {
         playerY = 345;
         isOnPlatform = true;
       }
-      if (playerX > 370 && playerX < 440 && playerY > 235 && playerY < 240) {
+      if (playerX > 370 - 600 && playerX < 440 - 600 && playerY > 235 && playerY < 240) {
         playerY = 235;
         isOnPlatform = true;
       }
-      if (playerX > 350 && playerX < 420 && playerY > 135 && playerY < 140) {
+      if (playerX > 350 - 600 && playerX < 420 - 600 && playerY > 135 && playerY < 140) {
         playerY = 135;
         isOnPlatform = true;
       }
-      if (playerX > 270 && playerX < 340 && playerY > 75 && playerY < 80) {
+      if (playerX > 270 - 600 && playerX < 340 - 600 && playerY > 75 && playerY < 80) {
         playerY = 75;
         isOnPlatform = true;
       }
-      if (playerX > 370 && playerX < 440 && playerY > 35 && playerY < 40) {
+      if (playerX > 370 - 600 && playerX < 440 - 600 && playerY > 35 && playerY < 40) {
         playerY = 35;
         isOnPlatform = true;
       }
-      if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
+      if (playerX > 520 -600 && playerX < 590 - 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
@@ -234,36 +234,36 @@ public class Sketch1 extends PApplet {
           isOnPlatform = true;
       }
   
-      if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
+      if (playerX > 155 - 600 && playerX < 225 - 600 && playerY > 65 && playerY < 70) {
         playerY = 65;
         isOnPlatform = true;
       }
-      if (playerX > 70 && playerX < 140 && playerY > -5 && playerY < 0) {
+      if (playerX > 70 - 600 && playerX < 140 - 600 && playerY > -5 && playerY < 0) {
         playerY = -5;
         isOnPlatform = true;
       }
-      if (playerX > -30 && playerX < 40 && playerY > 40 && playerY < 45) {
+      if (playerX > -30  - 600 && playerX < 40 - 600 && playerY > 40 && playerY < 45) {
         playerY = 40;
         isOnPlatform = true;
       }
-      if (playerX > 20 && playerX < 90 && playerY > 145 && playerY < 150) {
+      if (playerX > 20 - 600 && playerX < 90 - 600 && playerY > 145 && playerY < 150) {
         playerY = 145;
         isOnPlatform = true;
       }
-      if (playerX > 10 && playerX < 80 && playerY > 255 && playerY < 260) {
+      if (playerX > 10- 600 && playerX < 80 - 600&& playerY > 255 && playerY < 260) {
         playerY = 255;
         isOnPlatform = true;
       }
-      if (playerX > 90 && playerX < 160 && playerY > 385 && playerY < 390) {
+      if (playerX > 90 - 600 && playerX < 160 - 600 && playerY > 385 && playerY < 390) {
         playerY = 385;
         isOnPlatform = true;
       }
   
-      if (playerX > 520 && playerX < 590 && playerY > 30 && playerY < 35) {
+      if (playerX > 520 - 600 && playerX < 590 - 600 && playerY > 30 && playerY < 35) {
         playerY = 30;
         isOnPlatform = true;
       }
-      if (playerX > -30 && playerX < 40 && playerY > 465 && playerY < 470) {
+      if (playerX > -30 - 600 && playerX < 40 - 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
@@ -319,75 +319,75 @@ public class Sketch1 extends PApplet {
 
       image(player, playerX - 600, playerY, width/15, height/15);
 
-      if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
+      if (playerX > 245 + 600 && playerX < 315 + 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
-      if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
+      if (playerX > 375 + 600 && playerX < 445 + 600 && playerY > 435 && playerY < 440) {
         playerY = 435;
         isOnPlatform = true;
       } 
-      if (playerX > 425 && playerX < 495 && playerY > 345 && playerY < 350) {
+      if (playerX > 425 + 600 && playerX < 495 + 600&& playerY > 345 && playerY < 350) {
         playerY = 345;
         isOnPlatform = true;
       }
-      if (playerX > 370 && playerX < 440 && playerY > 235 && playerY < 240) {
+      if (playerX > 370 + 600 && playerX < 440 + 600 && playerY > 235 && playerY < 240) {
         playerY = 235;
         isOnPlatform = true;
       }
-      if (playerX > 350 && playerX < 420 && playerY > 135 && playerY < 140) {
+      if (playerX > 350 + 600 && playerX < 420 + 600 && playerY > 135 && playerY < 140) {
         playerY = 135;
         isOnPlatform = true;
       }
-      if (playerX > 270 && playerX < 340 && playerY > 75 && playerY < 80) {
+      if (playerX > 270 + 600 && playerX < 340 + 600 && playerY > 75 && playerY < 80) {
         playerY = 75;
         isOnPlatform = true;
       }
-      if (playerX > 370 && playerX < 440 && playerY > 35 && playerY < 40) {
+      if (playerX > 370 + 600 && playerX < 440 + 600 && playerY > 35 && playerY < 40) {
         playerY = 35;
         isOnPlatform = true;
       }
-      if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
+      if (playerX > 520 + 600 && playerX < 590 + 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
   
       // fix later
-      if (playerX > 170 && playerX < 200 && playerY > 65) {
+      if (playerX > 170 + 600 && playerX < 200 + 600 && playerY > 65) {
           playerY = 65;
           isOnPlatform = true;
       }
   
-      if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
+      if (playerX > 155 + 600 && playerX < 225 + 600 && playerY > 65 && playerY < 70) {
         playerY = 65;
         isOnPlatform = true;
       }
-      if (playerX > 70 && playerX < 140 && playerY > -5 && playerY < 0) {
+      if (playerX > 70 + 600 && playerX < 140 + 600 && playerY > -5 && playerY < 0) {
         playerY = -5;
         isOnPlatform = true;
       }
-      if (playerX > -30 && playerX < 40 && playerY > 40 && playerY < 45) {
+      if (playerX > -30 + 600 && playerX < 40 + 600 && playerY > 40 && playerY < 45) {
         playerY = 40;
         isOnPlatform = true;
       }
-      if (playerX > 20 && playerX < 90 && playerY > 145 && playerY < 150) {
+      if (playerX > 20 + 600 && playerX < 90 + 600 && playerY > 145 && playerY < 150) {
         playerY = 145;
         isOnPlatform = true;
       }
-      if (playerX > 10 && playerX < 80 && playerY > 255 && playerY < 260) {
+      if (playerX > 10 + 600 && playerX < 80 + 600 && playerY > 255 && playerY < 260) {
         playerY = 255;
         isOnPlatform = true;
       }
-      if (playerX > 90 && playerX < 160 && playerY > 385 && playerY < 390) {
+      if (playerX > 90 + 600 && playerX < 160 + 600 && playerY > 385 && playerY < 390) {
         playerY = 385;
         isOnPlatform = true;
       }
   
-      if (playerX > 520 && playerX < 590 && playerY > 30 && playerY < 35) {
+      if (playerX > 520 + 600 && playerX < 590 + 600 && playerY > 30 && playerY < 35) {
         playerY = 30;
         isOnPlatform = true;
       }
-      if (playerX > -30 && playerX < 40 && playerY > 465 && playerY < 470) {
+      if (playerX > -30 + 600 && playerX < 40 + 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
       }
@@ -416,8 +416,7 @@ public class Sketch1 extends PApplet {
     stroke(0);
     fill(50, 168, 82);
 
-    System.out.println(isOnMiddleSide);
-
+    System.out.println(playerX);
     if(isOnMiddleSide == true){
       jump = 10;
     }
