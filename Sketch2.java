@@ -58,8 +58,6 @@ public class Sketch2 extends PApplet {
     rect(400, 70, 50, 5);
     rect(550, 500, 50, 5);
 
-    rect(200, 100, 15, 500);
-
     rect(185, 100, 50, 5);
     rect(100, 30, 50, 5);
     rect(0, 75, 50, 5);
@@ -84,7 +82,7 @@ public class Sketch2 extends PApplet {
       if (playerX > 245 && playerX < 315 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
-      }
+      } 
       if (playerX > 375 && playerX < 445 && playerY > 435 && playerY < 440) {
         playerY = 435;
         isOnPlatform = true;
@@ -112,12 +110,6 @@ public class Sketch2 extends PApplet {
       if (playerX > 520 && playerX < 590 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
-      }
-  
-      // fix later
-      if (playerX > 170 && playerX < 200 && playerY > 65) {
-          playerY = 65;
-          isOnPlatform = true;
       }
   
       if (playerX > 155 && playerX < 225 && playerY > 65 && playerY < 70) {
@@ -200,9 +192,7 @@ public class Sketch2 extends PApplet {
       rect(300, 110, 50, 5);
       rect(400, 70, 50, 5);
       rect(550, 500, 50, 5);
-  
-      rect(200, 100, 15, 500);
-  
+ 
       rect(185, 100, 50, 5);
       rect(100, 30, 50, 5);
       rect(0, 75, 50, 5);
@@ -247,12 +237,6 @@ public class Sketch2 extends PApplet {
       if (playerX > 520 -600 && playerX < 590 - 600 && playerY > 465 && playerY < 470) {
         playerY = 465;
         isOnPlatform = true;
-      }
-  
-      // fix later
-      if (playerX > 170 - 600 && playerX < 200 - 600 && playerY > 65) {
-          playerY = 65;
-          isOnPlatform = true;
       }
   
       if (playerX > 155 - 600 && playerX < 225 - 600 && playerY > 65 && playerY < 70) {
@@ -339,8 +323,6 @@ public class Sketch2 extends PApplet {
       rect(400, 70, 50, 5);
       rect(550, 500, 50, 5);
   
-      rect(200, 100, 15, 500);
-  
       rect(185, 100, 50, 5);
       rect(100, 30, 50, 5);
       rect(0, 75, 50, 5);
@@ -388,11 +370,6 @@ public class Sketch2 extends PApplet {
         isOnPlatform = true;
       }
   
-      // fix later
-      if (playerX > 170 + 600 && playerX < 200 + 600 && playerY > 65) {
-          playerY = 65;
-          isOnPlatform = true;
-      }
   
       if (playerX > 155 + 600 && playerX < 225 + 600 && playerY > 65 && playerY < 70) {
         playerY = 65;
@@ -474,6 +451,8 @@ public class Sketch2 extends PApplet {
 
     gameEnd();
 
+    System.out.println(isOnPlatform);
+
   }
 
   void gameEnd() {
@@ -487,6 +466,7 @@ public class Sketch2 extends PApplet {
     if(keyLeft) playerX-=speed;
     if(keyRight) playerX+=speed;
     if(keyUp) playerY-=jump;
+    
   }
 
   @Override
