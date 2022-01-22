@@ -250,7 +250,7 @@ public class Sketch2 extends PApplet {
       }
   
       // fix later
-      if (playerX > 170 && playerX < 200 && playerY > 65) {
+      if (playerX > 170 - 600 && playerX < 200 - 600 && playerY > 65) {
           playerY = 65;
           isOnPlatform = true;
       }
@@ -468,19 +468,19 @@ public class Sketch2 extends PApplet {
       text("Restart The Screen", 300, 400);
     }
 
-
-    System.out.println(playerX);
-    System.out.println(playerY);
     if(isOnMiddleSide == true){
       jump = 10;
     }
 
-    System.out.println(collectables[1]);
+    gameEnd();
 
   }
 
-  void collection() {
-
+  void gameEnd() {
+    if (collectables[0] == false && collectables[1] == false && collectables[2] == false) {
+      background(0);
+      text("You Won", 300, 300);
+    }
   }
 
   void changePosition() {
