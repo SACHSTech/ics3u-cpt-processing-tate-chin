@@ -3,15 +3,15 @@
 
 # Game Objective
 
-Once entering the game, you are to play as a cat and go around collecting objects that are placed around the map. In total, there are twenty different objects. Once all are collected, you must enter through a door that is placed in the middle of the screen, and you will be greeted by some winning text. The challenge comes when dangerous spikes are placed at the bottom of the map. You must navigate through the game without touching them.
+Once entering the game, you are to play as a cat and go around collecting objects that are placed around the map. In total, there are three different objects. Once all are collected, you will be greeted by some winning text. The challenge comes when dangerous spikes are placed at the bottom of the map. You must navigate through the game without touching them. When touched, the game over screen is shown.
 
 # Gameplay Mechanics
 
-The player is able to move left, right, and jump using the arrow keys and spacebar respectively. The rectangles that are generated are platforms that you are able to stand on and the triangles at the bottom of the screen represent deadly spikes. Falling onto the spikes triggers a game over screen. The circular objects are what the player needs to collect and are scattered throughout the map. In some parts of the game, there will be rainfall which decreases the height that the player can jump making it more challenging for them to get from platform to platform
+The player is able to move left, right, and jump using the left key, right key, and up key respectively. The rectangles that are generated are platforms that you are able to stand on and the dark red triangles at the bottom of the screen represent deadly spikes. The circular objects are what the player needs to collect and are scattered throughout the map. In some parts of the game, there will be rainfall which decreases the height that the player can jump making it more challenging for them to get from platform to platform. You are able to move further left or further right in order to expand the map more. 
 
 # Scoring
 
-The program counts how many objects you have collected out of twenty. 
+The program counts how many objects you have collected out of three. 
 
 # Limitations
 
